@@ -1,4 +1,5 @@
-# Github Wrapper
+# Github Wrapper 
+[![Build Status](https://travis-ci.org/davidalves1/github-wrapper.svg?branch=master)](https://travis-ci.org/davidalves1/github-wrapper)
 
 A wrapper to work with the [Github Web API](https://developer.github.com/v3/).
 
