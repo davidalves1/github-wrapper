@@ -13,7 +13,8 @@
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "npm test -- --watch",
     "test:bail": "npm test -- --bail",
-    "test:coverage": "./node_modules/.bin/nyc npm test"
+    "test:coverage": "./node_modules/.bin/nyc npm test",
+    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
     "report": [
@@ -34,6 +35,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
     "mocha": "^5.2.0",
     "node-fetch": "^2.3.0",
     "nyc": "^13.1.0",
