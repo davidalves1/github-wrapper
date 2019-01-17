@@ -2,7 +2,7 @@
   "name": "github-wrapper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "clear": "rm -rf lib",
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
@@ -16,6 +16,10 @@
     "test:coverage": "./node_modules/.bin/nyc npm test",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
   },
+  "files": [
+    "dist",
+    "lib"
+  ],
   "nyc": {
     "report": [
       "text",
